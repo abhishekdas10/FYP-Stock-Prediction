@@ -16,3 +16,5 @@ fyp-stock/
 
 # VS Code
 .vscode/
+
+.env

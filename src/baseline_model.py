@@ -18,7 +18,7 @@ df["MA_10"] = df["Close"].rolling(10).mean()
 # 1 = next day close is higher than today
 # 0 = next day close is not higher than today
 df["Target"] = (df["Close"].shift(-1) > df["Close"]).astype(int)
-
+print(df)
 # Drop rows with NaN values caused by rolling/shift
 df = df.dropna()
 
@@ -27,7 +27,7 @@ features = ["Open", "High", "Low", "Close", "Volume", "Return", "MA_5", "MA_10"]
 
 X = df[features]
 y = df["Target"]
-
+print(df)
 # Train/test split without shuffling because this is time-series style data
 split_index = int(len(df) * 0.8)
 

@@ -20,7 +20,6 @@ for col in cols:
 
 # Drop any remaining NaNs
 df = df.dropna()
-
 # Convert Date to datetime
 df["Date"] = pd.to_datetime(df["Date"])
 
