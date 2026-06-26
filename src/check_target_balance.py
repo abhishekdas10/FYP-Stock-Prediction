@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv("data/processed/cleaned_gold_data.csv")
 
-df["Target"] = (df["Close"].shift(-1) > df["Close"]).astype(int)
+df["Target"] = (df["Close"].shift(-5) > df["Close"]).astype(int)
 df = df.dropna()
 
 print("Target value counts:")

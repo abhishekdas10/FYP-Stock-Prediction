@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("data/raw/vix_data.csv")
+df = pd.read_csv("data/raw/vix_2015_2020.csv")
 
 print("Before cleaning:")
 print(df.head())
@@ -27,7 +27,7 @@ df = df.rename(columns={
     "Volume": "VIX_Volume"
 })
 
-df.to_csv("data/processed/cleaned_vix_data.csv", index=False)
+df.to_csv("data/processed/cleaned_vix_2015_2020.csv", index=False)
 
 print("\nAfter cleaning:")
 print(df.head())
