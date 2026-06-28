@@ -42,10 +42,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 # TF-IDF + Logistic Regression model
 model = Pipeline([
     ("tfidf", TfidfVectorizer(stop_words="english", max_features=5000)),
-    ("classifier", LogisticRegression(
-        max_iter=1000,
-        class_weight="balanced"
-    ))
+    ("classifier", LogisticRegression(max_iter=1000))
 ])
 
 # Train
