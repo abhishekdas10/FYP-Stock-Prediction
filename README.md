@@ -1,7 +1,7 @@
 # Stock Market Trend Prediction Using Sentiment Analysis and Machine Learning
 
 **Final Year Project — Griffith College Cork**
-**Student:** Saugat | **Supervisor:** Atif
+**Student:** Abhishek | **Supervisor:** Atif
 
 ---
 
